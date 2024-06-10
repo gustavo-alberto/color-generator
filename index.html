@@ -15,21 +15,23 @@
           <span>Color Generator</span>
         </div>
         <div class="field-container">
-          <i class="fa-solid fa-pen-to-square"></i>
           <div id="hex-field"><span id="hex-field-value"></span></div>
-          <i class="fa-solid fa-copy"></i>
+          <i class="copy-btn fa-solid fa-copy" onclick="copyHexToClipboard()"></i>
         </div>
         <div class="field-container">
-          <i class="fa-solid fa-pen-to-square"></i>
           <div id="rgb-field">
             <div class="rgb-individual-field" id="rgb-r-field"></div>
             <div class="rgb-individual-field" id="rgb-g-field"></div>
             <div class="rgb-individual-field" id="rgb-b-field"></div>
           </div>
-          <i class="fa-solid fa-copy"></i>
+          <i class="copy-btn fa-solid fa-copy" onclick="copyRGBToClipboard()"></i>
         </div>
         <div><button class="btn" id="shuffle-button">Shuffle</button></div>
-        <div><i class="fa-brands fa-github"></i></div>
+        <div>
+          <a href="https://github.com/gustavo-alberto/color-generator" target="_blank" rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
       </div>
     </div>
   </body>

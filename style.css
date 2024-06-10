@@ -97,3 +97,7 @@
   background-color: #104c91;
   cursor: pointer;
 }
+
+.copy-btn:hover {
+  cursor: pointer;
+}

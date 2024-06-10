@@ -46,6 +46,26 @@ function applyRandomColor() {
   return generatedHexCode
 }
 
+// Copy Hex value to clipboard
+function copyHexToClipboard() {
+  // Get the text field
+  const hexFieldValue = document.getElementById('hex-field-value')
+
+  //  Copy the text
+  navigator.clipboard.writeText(hexFieldValue.textContent)
+}
+
+// Copy RGB value to clipboard
+function copyRGBToClipboard() {
+  const rValue = rgbRField.textContent
+  const gValue = rgbGField.textContent
+  const bValue = rgbBField.textContent
+  const stringToClipboard = rValue + ',' + gValue + ',' + bValue
+
+  //  Copy the text
+  navigator.clipboard.writeText(stringToClipboard)
+}
+
 window.onload = () => {
   convertToRGB(applyRandomColor())
 }
