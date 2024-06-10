@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <title>Color Generator</title>
+  </head>
+  <body>
+    <div id="root">
+      <div id="card">
+        <div id="card-title">
+          <span>Color Generator</span>
+        </div>
+        <div class="field-container">
+          <div id="hex-field"><span id="hex-field-value"></span></div>
+          <i class="copy-btn fa-solid fa-copy" onclick="copyHexToClipboard()"></i>
+        </div>
+        <div class="field-container">
+          <div id="rgb-field">
+            <div class="rgb-individual-field" id="rgb-r-field"></div>
+            <div class="rgb-individual-field" id="rgb-g-field"></div>
+            <div class="rgb-individual-field" id="rgb-b-field"></div>
+          </div>
+          <i class="copy-btn fa-solid fa-copy" onclick="copyRGBToClipboard()"></i>
+        </div>
+        <div><button class="btn" id="shuffle-button">Shuffle</button></div>
+        <div>
+          <a href="https://github.com/gustavo-alberto/color-generator" target="_blank" rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
