@@ -1,0 +1,16 @@
+{
+  "name": "color-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Random color generator with HEX, RGB and HSL values and WCAG contrast. Runs entirely in the browser. Zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "test": "node --test",
+    "icons": "node scripts/build-icons.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

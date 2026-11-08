@@ -1,12 +1,12 @@
-// Applies the saved theme before first paint, so the wrong theme never flashes.
-// Kept as a separate file because the Content Security Policy blocks inline scripts.
+// Runs synchronously in <head>, before first paint, so a saved manual theme does not flash.
+// Kept as a tiny classic script because the Content Security Policy forbids inline scripts.
 ;(function () {
   try {
-    var saved = localStorage.getItem('colorgen:theme')
-    if (saved === 'light' || saved === 'dark') {
-      document.documentElement.setAttribute('data-theme', saved)
+    var prefs = JSON.parse(localStorage.getItem('colorgen:prefs:v1') || '{}')
+    if (prefs && (prefs.theme === 'light' || prefs.theme === 'dark')) {
+      document.documentElement.setAttribute('data-theme', prefs.theme)
     }
   } catch (e) {
-    // Storage unavailable: fall back to the system theme.
+    // Storage unavailable: follow the system theme.
   }
 })()
