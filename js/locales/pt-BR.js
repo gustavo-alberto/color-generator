@@ -53,5 +53,7 @@ export default Object.freeze({
   historyCleared: 'Histórico limpo',
 
   footer: 'Roda no seu navegador. Nada é enviado.',
+  footerLinkedin: 'Perfil no LinkedIn (abre em nova aba)',
+  footerGithub: 'Perfil no GitHub (abre em nova aba)',
   errCrypto: 'Seu navegador não oferece números aleatórios seguros, então não é possível gerar cores.',
 })

@@ -53,5 +53,7 @@ export default Object.freeze({
   historyCleared: 'History cleared',
 
   footer: 'Runs in your browser. Nothing is sent.',
+  footerLinkedin: 'LinkedIn profile (opens in a new tab)',
+  footerGithub: 'GitHub profile (opens in a new tab)',
   errCrypto: "Your browser doesn't provide secure random numbers, so no colors can be generated.",
 })
